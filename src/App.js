@@ -2,10 +2,12 @@
 import user from 'components/json/user.json';
 import statisticalData from 'components/json/statistical-data.json';
 import friends from 'components/json/friends.json';
+import transactions from 'components/json/transactions.json';
 import Profile from 'components/Profile/Profile';
 import StatisticsList from 'components/Statistic/StatisticsList';
 import Section from 'components/Statistic/Section';
 import FriendList from 'components/FriendList/FriendList';
+import TransactionHistory from 'components/TransactionHistory/TransactionHistory';
 import './App.css';
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
       </Section>
 
       <FriendList friends={friends} />
+
+      <TransactionHistory items={transactions} />
     </div>
   );
 }
