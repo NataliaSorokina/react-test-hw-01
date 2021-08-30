@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
-import user from 'components/json/user.json';
-import statisticalData from 'components/json/statistical-data.json';
-import friends from 'components/json/friends.json';
-import transactions from 'components/json/transactions.json';
+import user from './json/user.json';
+import statisticalData from './json/statistical-data.json';
+import friends from './json/friends.json';
+import transactions from './json/transactions.json';
 import Profile from 'components/Profile/Profile';
 import StatisticsList from 'components/Statistic/StatisticsList';
 import Section from 'components/Statistic/Section';
