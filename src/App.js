@@ -1,6 +1,9 @@
 // import logo from './logo.svg';
-import user from 'Json/user.json';
+import user from 'components/json/user.json';
+import statisticalData from 'components/json/statistical-data.json';
 import Profile from 'components/Profile/Profile';
+import StatisticsList from 'components/Statistic/StatisticsList';
+import Section from 'components/Statistic/Section';
 import './App.css';
 
 function App() {
@@ -15,6 +18,10 @@ function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
+      <Section title="Upload stats">
+        <StatisticsList stats={statisticalData} />
+        {/* <Statistics stats={statisticalData} />; */}
+      </Section>
     </div>
   );
 }
