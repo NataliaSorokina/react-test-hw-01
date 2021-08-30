@@ -1,12 +1,23 @@
 import Statistics from './Statistics';
+import styles from './StatisticsList.module.css';
+import getRandomNumber from './getrandomNumber';
 // import stats from '../'
 import PropTypes from 'prop-types';
 
 function StatisticsList({ stats }) {
   return (
-    <ul class="stat-list">
+    <ul className={styles.statList}>
       {stats.map(stat => (
-        <li key={stat.id}>
+        <li
+          key={stat.id}
+          className={styles.item}
+          style={{
+            backgroundColor: `rgb(${getRandomNumber(0, 255)}, ${getRandomNumber(
+              0,
+              255,
+            )}, ${getRandomNumber(0, 255)})`,
+          }}
+        >
           <Statistics label={stat.label} percentage={stat.percentage} />
         </li>
       ))}

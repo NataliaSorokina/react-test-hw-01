@@ -8,11 +8,11 @@ import StatisticsList from 'components/Statistic/StatisticsList';
 import Section from 'components/Statistic/Section';
 import FriendList from 'components/FriendList/FriendList';
 import TransactionHistory from 'components/TransactionHistory/TransactionHistory';
-import './App.css';
+import styles from './App.module.css';
 
 function App() {
   return (
-    <div>
+    <div className={styles.container}>
       <Profile
         avatar={user.avatar}
         name={user.name}

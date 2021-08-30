@@ -1,29 +1,30 @@
 // import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
+import styles from './Profile.module.css';
 
 function Profile(props) {
   const { avatar, name, tag, location, followers, views, likes } = props;
   return (
-    <div class="profile">
-      <div class="description">
-        <img src={avatar} alt={name} class="avatar" />
-        <p class="name">{name}</p>
-        <p class="tag">@{tag}</p>
-        <p class="location">{location}</p>
+    <div className={styles.profile}>
+      <div className={styles.description}>
+        <img src={avatar} alt={name} className={styles.avatar} />
+        <p className={styles.name}>{name}</p>
+        <p className={styles.tag}>@{tag}</p>
+        <p className={styles.location}>{location}</p>
       </div>
 
-      <ul class="stats">
-        <li>
-          <span class="label">Followers</span>
-          <span class="quantity">{followers}</span>
+      <ul className={styles.stats}>
+        <li className={styles.items}>
+          <span className={styles.label}>Followers</span>
+          <span className={styles.quantity}>{followers}</span>
         </li>
-        <li>
-          <span class="label">Views</span>
-          <span class="quantity">{views}</span>
+        <li className={styles.items}>
+          <span className={styles.label}>Views</span>
+          <span className={styles.quantity}> {views}</span>
         </li>
-        <li>
-          <span class="label">Likes</span>
-          <span class="quantity">{likes}</span>
+        <li className={styles.items}>
+          <span className={styles.label}>Likes</span>
+          <span className={styles.quantity}> {likes}</span>
         </li>
       </ul>
     </div>
