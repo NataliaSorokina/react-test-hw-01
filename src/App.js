@@ -1,9 +1,11 @@
 // import logo from './logo.svg';
 import user from 'components/json/user.json';
 import statisticalData from 'components/json/statistical-data.json';
+import friends from 'components/json/friends.json';
 import Profile from 'components/Profile/Profile';
 import StatisticsList from 'components/Statistic/StatisticsList';
 import Section from 'components/Statistic/Section';
+import FriendList from 'components/FriendList/FriendList';
 import './App.css';
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
         <StatisticsList stats={statisticalData} />
         {/* <Statistics stats={statisticalData} />; */}
       </Section>
+
+      <FriendList friends={friends} />
     </div>
   );
 }
